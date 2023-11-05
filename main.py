@@ -1,9 +1,8 @@
 import os
 from flask import Flask, request
-
-from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate, \
     ChatPromptTemplate
+from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationChain, LLMChain
 from langchain.document_loaders import UnstructuredURLLoader
 from langchain.text_splitter import CharacterTextSplitter
