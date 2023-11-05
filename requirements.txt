@@ -1,4 +1,4 @@
-langchain==0.0.208
+langchain==0.0.264
 openai
 bs4
 flask
