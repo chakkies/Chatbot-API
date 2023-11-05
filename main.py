@@ -19,7 +19,6 @@ from langchain.chains.question_answering import load_qa_chain
 # from langchain.document_loaders import TextLoader
 # from langchain.indexes import VectorstoreIndexCreator
 from langchain.document_loaders import AsyncChromiumLoader
-import nest_asyncio
 from langchain.document_loaders.recursive_url_loader import RecursiveUrlLoader
 from bs4 import BeautifulSoup as Soup
 import keys
