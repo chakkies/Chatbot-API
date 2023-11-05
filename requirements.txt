@@ -1,0 +1,5 @@
+langchain
+faiss
+bs4
+flask
+flask_restful
