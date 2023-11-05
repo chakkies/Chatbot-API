@@ -3,3 +3,4 @@ openai
 bs4
 flask
 flask_restful
+pydantic==1.8
