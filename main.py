@@ -1,24 +1,15 @@
 import os
 
-from langchain.document_transformers import BeautifulSoupTransformer
-from langchain.llms import OpenAI
+
+
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate, \
     ChatPromptTemplate
-from langchain.schema import HumanMessage
 from langchain.chains import ConversationChain, LLMChain
 from langchain.document_loaders import UnstructuredURLLoader
 from langchain.text_splitter import CharacterTextSplitter
-import pickle
-from langchain.vectorstores import Chroma
-import faiss
 from langchain.vectorstores import FAISS
 from langchain.embeddings import  OpenAIEmbeddings
-from langchain.chains import  RetrievalQAWithSourcesChain
-from langchain.chains.question_answering import load_qa_chain
-# from langchain.document_loaders import TextLoader
-# from langchain.indexes import VectorstoreIndexCreator
-from langchain.document_loaders import AsyncChromiumLoader
 from langchain.document_loaders.recursive_url_loader import RecursiveUrlLoader
 from bs4 import BeautifulSoup as Soup
 import keys

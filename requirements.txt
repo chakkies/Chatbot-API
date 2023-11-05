@@ -1,5 +1,5 @@
 langchain
-faiss
+openai
 bs4
 flask
 flask_restful
