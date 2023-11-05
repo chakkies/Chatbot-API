@@ -1,5 +1,6 @@
 import os
-import langchain
+from flask import Flask, request
+
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate, \
     ChatPromptTemplate
@@ -12,7 +13,7 @@ from langchain.document_loaders.recursive_url_loader import RecursiveUrlLoader
 from bs4 import BeautifulSoup as Soup
 import keys
 os.environ["OPENAI_API_KEY"] = keys.OPENAI
-from flask import Flask, request
+
 from flask_restful import Api, Resource, reqparse
 
 app = Flask(__name__)
